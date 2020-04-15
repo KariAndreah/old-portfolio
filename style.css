@@ -29,6 +29,12 @@ body, html {
      font-size: 50px;
  }
 
+ @media only screen and (max-height: 960px){	
+    .scrollContainer{	
+        margin-top: 5vh; 	
+    }
+}
+
   /* Header */
 #home{
     height: 100%;
