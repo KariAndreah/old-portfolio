@@ -141,17 +141,17 @@ body, html {
     justify-content: space-between;
 }
 .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin:auto;
     margin-bottom:20px;
     background-color: white;
     height:400px;
     max-width:325px;
     border: lightslategray 2px solid;
-    box-shadow: 2.5px 5px lightslategray;
+    box-shadow: 0 10px 6px -6px #777;
     border-radius: 1px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 .card > div{
     flex:1;
@@ -177,12 +177,10 @@ body, html {
 .projectpic{
     width:250px;
     height:auto;
-    border: #B75562 solid 0.1em;
-    border-radius: 3%;
+    box-shadow: 0 10px 6px -6px #777;
     margin-top: 2em;  
     margin-left: auto;
     margin-right: auto;
-    border: #DCB373 solid 0.2em;
 }
 
 .projectInfo{
