@@ -29,18 +29,12 @@ body, html {
      font-size: 50px;
  }
 
- @media only screen and (max-height: 960px){	
-    .scrollContainer{	
-        margin-top: 5vh; 	
-    }
-}
-
   /* Header */
 #home{
     height: 100%;
     width:100%;
     color:darkslategray; 
-    background: url("./drilldown.jpg") no-repeat center fixed;
+    background: url("./images/drilldown.jpg") no-repeat center fixed;
     background-size: cover !important;
     -webkit-background-size: cover !important;
     -moz-background-size: cover !important;
@@ -50,22 +44,18 @@ body, html {
 }
 .containerName{
     height:50%;
-    width:90%;
+    width:75%;
     display:grid;
     margin: auto;
 }
 .name{
-    font-size: max(6vw, 55px); 
+    font-size: max(7vw, 55px); 
 }
 .job{
     font-size: max(3vw, 25px);
     margin-top: -1em;
 }
-@media only screen and (max-width: 960px){	
-    #home{	
-        background-attachment:scroll;	
-    }
-}
+
 
 /* About */
 #about{
@@ -129,7 +119,6 @@ body, html {
     margin:auto;
     font-size: 2em;
     text-align: center;
-   
 }
 .row{
     display: flex;
@@ -149,18 +138,14 @@ body, html {
     flex-wrap: wrap;
     margin-top: -2em;
     margin-bottom: 2em;
-}
-.colP{
-    margin-top: -1.5em;
-    flex:1;
-    padding-top: 2em;
-    display: flex;
+    justify-content: space-between;
 }
 .card{
+    margin:auto;
+    margin-bottom:20px;
     background-color: white;
     height:400px;
-    width:325px;
-    margin:auto;
+    max-width:325px;
     border: lightslategray 2px solid;
     box-shadow: 2.5px 5px lightslategray;
     border-radius: 1px;
@@ -175,13 +160,17 @@ body, html {
 
 .card > div > h2{
     text-align: center;
+    margin: auto;
+    margin-bottom: -5px;
 }
 
 .card > div > a > button{
     background-color: #025685;
+    border:none;
     color:white;
     border-radius: 20px;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .projectpic{
@@ -199,6 +188,7 @@ p{
     text-align: left;
     margin-left:1em;
     margin-right: 1em;
+    font-size: 0.8em;
 }
 /* Contact */
 #contact{
@@ -221,4 +211,18 @@ p{
 a{
     text-decoration: none;
     color: #012346;
+}
+
+@media only screen and (max-width: 960px){	
+    #home{	
+        background-attachment:scroll;	
+    }
+    .scrollContainer{	
+        margin-top: 5vh; 	
+    }
+    .skillsH1{
+        margin:auto;
+        font-size: 1.5em;
+        text-align: center;
+    }
 }
