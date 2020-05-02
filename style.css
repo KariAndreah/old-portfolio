@@ -222,6 +222,9 @@ a{
     .scrollContainer{	
         margin-top: 5vh; 	
     }
+    .picsize{
+        margin-top:2em;
+    }
     .skillsH1{
         margin:auto;
         font-size: 1.5em;
