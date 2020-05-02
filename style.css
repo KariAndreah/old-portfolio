@@ -161,7 +161,7 @@ body, html {
     margin:auto;
 }
 
-.card > div > h2{
+.card > div  h2{
     text-align: center;
     margin: auto;
     margin-top:10px;
@@ -181,14 +181,14 @@ body, html {
     width:250px;
     height:auto;
     box-shadow: 0 10px 6px -6px #777;
-    margin-top: 2em;  
     margin-left: auto;
-    margin-right: auto;
+    margin-right:auto;
+    padding-top: 2em;  
 }
 
 .projectInfo{
     text-align: left;
-    margin-left:1em;
+    margin-left: 1em;
     margin-right: 1em;
     font-size: 0.8em;
 }
