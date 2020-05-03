@@ -68,7 +68,7 @@ body, html {
 .containerAbout{
     display: flex;
     flex-wrap:wrap;
-    width:80%;
+    width: 75%;
     margin:auto; 
     justify-content: center;
 }
@@ -221,7 +221,7 @@ a{
         background-attachment:scroll;	
     }
     .scrollContainer{	
-        margin-top: 5vh; 	
+        margin-top: 6vh; 	
     }
     .picsize{
         margin-top:2em;
