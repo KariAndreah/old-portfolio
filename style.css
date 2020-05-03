@@ -6,13 +6,7 @@ body, html {
      margin:0;
      background-color:#E1E7ED; 
      scroll-behavior: smooth;
-     font-family: 'Poppins Regular';
-  }
-  @font-face {
-    font-family: 'Poppins Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Poppins Regular'), url('Poppins-Regular.woff') format('woff');
+     font-family: 'Noto Sans JP', sans-serif;
   }
 
 /* Nav */
@@ -47,6 +41,8 @@ body, html {
     width:75%;
     display:grid;
     margin: auto;
+    color:white;
+    font-weight: 700;
 }
 .name{
     font-size: max(7vw, 55px); 
