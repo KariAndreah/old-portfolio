@@ -6,8 +6,15 @@ body, html {
      margin:0;
      background-color:#E1E7ED; 
      scroll-behavior: smooth;
-     font-family: 'Noto Sans JP', sans-serif;
+     /* font-family: 'Noto Sans JP', sans-serif; */
+     font-family: myFirstFont;
   }
+
+@font-face {
+    font-family: myFirstFont ;
+    src: url(Roboto-Regular.ttf);
+
+}
 
 /* Nav */
 .scrollContainer{
@@ -28,7 +35,8 @@ body, html {
     height: 100%;
     width:100%;
     color:darkslategray; 
-    background: url("./images/drilldown.jpg") no-repeat center fixed;
+    /* background: url("./images/drilldown.jpg") no-repeat center fixed; */
+    background: url("./images/Clouds.jpg") no-repeat center fixed;
     background-size: cover !important;
     -webkit-background-size: cover !important;
     -moz-background-size: cover !important;
@@ -60,13 +68,16 @@ body, html {
 .aboutText{
     color:white;
     margin-bottom: 5em;
+    font-size: 16px;
 }
 .containerAbout{
     display: flex;
     flex-wrap:wrap;
     width: 75%;
     margin:auto; 
-    justify-content: center;
+    /* justify-content: center; */
+    justify-content: space-between;
+    gap:5px; 
 }
 .col{
     flex:1;
@@ -79,6 +90,7 @@ body, html {
 .col2{
     flex:1;
     min-width: 275px;
+    margin-left: 20px;
 }
 .picsize{
     width:300px;
@@ -97,6 +109,7 @@ body, html {
     margin-top: -1.5em;
     font-size: 1rem;
     text-align: left;
+    /* text-indent: 45px; */
 }
 
 /* Skills */
@@ -117,6 +130,7 @@ body, html {
     margin:auto;
     font-size: 2em;
     text-align: center;
+    padding-bottom: 20px;
 }
 .row{
     display: flex;
@@ -124,7 +138,9 @@ body, html {
 .icons{
     font-size:3em;
     color:#012346;
-    text-align: center;
+    text-align: center; 
+    padding: 0px 10px 10px 10px;
+    
 }
 
 /* Projects */
@@ -151,10 +167,14 @@ body, html {
     border: lightslategray 2px solid;
     box-shadow: 0 10px 6px -6px #777;
     border-radius: 1px;
+    align-items: center;
+
 }
 .card > div{
     flex:1;
     margin:auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .card > div  h2{
@@ -164,14 +184,27 @@ body, html {
     margin-bottom: -5px;
 }
 
-.card > div > a > button{
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px; 
+}
+
+
+.button {
     background-color: #025685;
     border:none;
     color:white;
-    border-radius: 20px;
+    border-radius: 5px;
+    padding: 10px 10px;
     font-size: 16px;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    
 }
+
 
 .projectpic{
     position: relative;
@@ -187,7 +220,7 @@ body, html {
     text-align: left;
     margin-left: 1em;
     margin-right: 1em;
-    font-size: 0.8em;
+    font-size:16px;
 }
 /* Contact */
 #contact{
@@ -198,7 +231,7 @@ body, html {
     color: white;
     font-size: 3em;
     margin-top: 1em;
-    margin-bottom: -0.1em;
+    margin-bottom:10px; 
     text-decoration: underline #DCB373;
 }
 .containercontact{
